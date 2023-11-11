@@ -28,7 +28,7 @@ builder.Services.AddAuthentication(options =>
         ValidateLifetime = true,
         // Criptografia e validação da chave de autenticacão.
         IssuerSigningKey = new
-    SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("exoapichave-autenticacao")),
+        SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("exoapi-chaveautenticacao")),
         // Valida o tempo de expiração do token.
         ClockSkew = TimeSpan.FromMinutes(30),
         // Nome do issuer, da origem.
